@@ -1,0 +1,7 @@
+# Ignore all node installed packages
+/node_modules
+
+# Ignore all bower installed packages
+/public/vendor
+
+/.sass-cache

@@ -1,0 +1,136 @@
+/*===========================================*/
+// imports
+@import 'fonts';
+
+/*===========================================*/
+// color palette
+
+$primary-color: #EF4940;
+// $primary-color: #20A9BA;
+$light-gray: #FAFAFA;
+
+/*===========================================*/
+// override Bootstrap
+.well {
+    border: 1px solid $primary-color;
+    background: $light-gray;
+}
+
+/*===========================================*/
+/*button styles styles*/
+/*===========================================*/
+.btn {
+    border-radius: 0;
+    color: #FFF;
+    font-family: 'League Gothic';
+    font-size: 20px;
+}
+
+.btn:hover {
+    color: #FFF;
+}
+
+.btn-copy {
+    background-color: $primary-color;
+}
+
+.btn-copy.zeroclipboard-is-hover {
+    background-color: darken($primary-color, 15%);
+}
+
+.btn-clicked {
+    background-color: #A3A3A3;
+    pointer-events: none;
+}
+
+/*===========================================*/
+/*general styles*/
+/*===========================================*/
+body {
+    background: $light-gray;
+}
+
+header {
+   // background: $primary-color;
+   padding: 10px;
+   // border-radius: 20px;
+   // margin: 15px 20px 0 20px;
+   border-bottom: 1px solid $primary-color;
+}
+
+header > h1, header > h5 {
+    margin: 0;
+    color: $primary-color;
+}
+
+.logo {
+    font-size: 35px;
+    top: -18px;
+}
+
+.headline {
+    font-family: 'League Gothic';
+    font-size: 100px;
+}
+
+.subhead {
+    font-family: 'League Gothic';
+    // font-style: italic;
+    font-size: 23px;
+    margin-top: -15px;
+}
+
+#ipsum-request {
+    font-family: 'League Gothic';
+    font-size: 25px;
+    margin: 40px 0 20px 0;
+}
+
+#ipsum-input {
+    text-align: center;
+    color: $primary-color;
+    font-size: 35px;
+    width: 50px;
+    outline: 0;
+    border: none;
+    border-bottom: 1px solid #757575;
+    background: $light-gray;
+}
+
+.generated-message {
+    margin-top: -20px;
+    margin-bottom: 25px;
+}
+
+#message {
+    font-family: 'League Gothic';
+    font-style: italic;
+    font-size: 30px;
+    color: $primary-color;
+}
+
+.ipsum-container {
+    font-family: 'Fanwood';
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+
+.animate-repeat.ng-move,
+.animate-repeat.ng-enter,
+.animate-repeat.ng-leave {
+    -webkit-transition: .4s linear all;
+            transition: .4s linear all;
+    opacity: 0;
+}
+
+.animate-repeat.ng-leave.ng-leave-active,
+.animate-repeat.ng-move,
+.animate-repeat.ng-enter {
+  opacity: 0;
+}
+
+.animate-repeat.ng-leave,
+.animate-repeat.ng-move.ng-move-active,
+.animate-repeat.ng-enter.ng-enter-active {
+  opacity: 1;
+}
