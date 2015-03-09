@@ -5,3 +5,6 @@
 /public/vendor
 
 /.sass-cache
+npm-debug.log
+.DS_Store
+/*.env
