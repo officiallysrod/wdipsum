@@ -2,7 +2,7 @@
 
 Here's a simple little ipsum generator filled with inside jokes from the Web Development Immersive Class I taught at General Assembly.  You can check out the app [here](https://wdipsum.herokuapp.com).
 
-Here's the very, ahem, _lean_ tech stack:
+Here's the very, _ahem_, lean tech stack:
 
 * a tiny Express app to serve the index.html file
 * an Angular app to handle the ipsum generation
