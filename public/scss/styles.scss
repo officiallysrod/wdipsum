@@ -4,20 +4,21 @@
 
 /*===========================================*/
 // color palette
-
+/*===========================================*/
 $primary-color: #EF4940;
-// $primary-color: #20A9BA;
+$primary-darker: darken($primary-color, 20%);
 $light-gray: #FAFAFA;
 
 /*===========================================*/
 // override Bootstrap
+/*===========================================*/
 .well {
     border: 1px solid $primary-color;
     background: $light-gray;
 }
 
 /*===========================================*/
-/*button styles styles*/
+/*button styles*/
 /*===========================================*/
 .btn {
     border-radius: 0;
@@ -35,7 +36,7 @@ $light-gray: #FAFAFA;
 }
 
 .btn-copy.zeroclipboard-is-hover {
-    background-color: darken($primary-color, 15%);
+    background-color: $primary-darker;
 }
 
 .btn-clicked {
@@ -47,11 +48,14 @@ $light-gray: #FAFAFA;
 /*general styles*/
 /*===========================================*/
 body {
-    background: $light-gray;
+    background: #FFF3ED;
 }
 
+/*===========================================*/
+/*header styles*/
+/*===========================================*/
 header {
-   // background: $primary-color;
+   background: $primary-color;
    padding: 10px;
    // border-radius: 20px;
    // margin: 15px 20px 0 20px;
@@ -60,7 +64,6 @@ header {
 
 header > h1, header > h5 {
     margin: 0;
-    color: $primary-color;
 }
 
 .logo {
@@ -70,14 +73,32 @@ header > h1, header > h5 {
 
 .headline {
     font-family: 'League Gothic';
-    font-size: 100px;
+    font-size: 120px;
+    color: $light-gray;
+    font-weight: 800;
+    text-shadow: 0 4px 0 rgba(0, 0, 0, 0.08);
 }
 
 .subhead {
     font-family: 'League Gothic';
-    // font-style: italic;
+    font-style: italic;
     font-size: 23px;
     margin-top: -15px;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.08);
+    color: $primary-darker;
+}
+
+/*===========================================*/
+/*main container styles*/
+/*===========================================*/
+main {
+    margin-bottom: 35px;
+    // background: #FFF3ED;
+    // position: fixed;
+    // top: 163px;
+    // bottom: 0;
+    // width: 100%;
+    // overflow: scroll;
 }
 
 #ipsum-request {
@@ -116,6 +137,34 @@ header > h1, header > h5 {
     margin-bottom: 25px;
 }
 
+/*===========================================*/
+// footer styles  
+/*===========================================*/
+footer {
+    position: fixed;
+    bottom: 0;
+    background: $primary-color;
+    width: 100%;
+    height: 35px;
+    font-family: 'League Gothic';
+    color: #FFF;
+    font-size: 18px;
+}
+
+footer > p {
+    margin: 7px;
+}
+footer > p > a {
+    color: #FFF;
+    text-decoration: underline;
+}
+
+footer > p > a:hover {
+    color: $primary-darker;
+}
+/*===========================================*/
+// animation styles for ipsum enter  
+/*===========================================*/
 .animate-repeat.ng-move,
 .animate-repeat.ng-enter,
 .animate-repeat.ng-leave {
