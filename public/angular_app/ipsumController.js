@@ -5,6 +5,7 @@ angular
     function ipsumController(){
         var self = this;
 
+        self.num; //bound to input box in view
         self.checkFlashInstall = checkFlashInstall();
         self.generatedIpsum    = [];
         self.buildParagraph    = buildParagraph;
@@ -39,7 +40,7 @@ angular
         }
 
         function buildParagraph(numParagraphs){
-            updateButtonState();
+            self.resetButtonState();
             numParagraphs > 100 ? numParagraphs = 100 : numParagraphs;
             var numSentences = numParagraphs * 10;
             var paragraph = buildSentence(self.phrases);
@@ -56,13 +57,13 @@ angular
         }
 
         function updateButtonState(){
-            if(!self.button.clicked && self.generatedIpsum.length > 0){
-                self.button.clicked = true;
-                self.button.message = 'Added!';
-            } else {
-                self.button.clicked = false;
-                self.button.message = 'Slap it on my clipboard!';
-            }
+            self.button.clicked = true;
+            self.button.message = 'Added!';
+        }
+
+        function resetButtonState(){
+            self.button.clicked = false;
+            self.button.message = 'Slap it on my clipboard!';
         }
 
         //check to see if client has flash installed
