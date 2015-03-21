@@ -35,3 +35,13 @@
    font-weight: normal;
    font-style: normal;
 }
+
+@font-face {
+  font-family: 'Ostrich Sans';
+  src: url('../fonts/ostrich_sans/ostrich-sans-regular.eot');
+  src: url('../fonts/ostrich_sans/ostrich-sans-regular.woff') format('woff'), 
+       url('../fonts/ostrich_sans/ostrich-sans-regular.ttf') format('truetype'), 
+       url('../fonts/ostrich_sans/ostrich-sans-regular.svg') format('svg');
+  font-weight: 400;
+  font-style: normal;
+}

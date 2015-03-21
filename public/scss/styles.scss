@@ -57,8 +57,6 @@ body {
 header {
    background: $primary-color;
    padding: 10px;
-   // border-radius: 20px;
-   // margin: 15px 20px 0 20px;
    border-bottom: 1px solid $primary-color;
 }
 
@@ -146,22 +144,36 @@ footer {
     background: $primary-color;
     width: 100%;
     height: 35px;
-    font-family: 'League Gothic';
-    color: #FFF;
+    font-family: 'Ostrich Sans';
+    color: $light-gray;
     font-size: 18px;
+    letter-spacing: 3px;
+
+    p {
+        margin: 7px;
+
+        a {
+            color: $light-gray;
+            border: 1px solid $light-gray;
+            padding: 5px 3px 0 3px;
+            &:hover {
+                color: $primary-darker;
+                background: $light-gray;
+                opacity: 0.8;
+                text-decoration: none;
+            }
+        }
+
+    } 
 }
 
-footer > p {
-    margin: 7px;
-}
-footer > p > a {
-    color: #FFF;
-    text-decoration: underline;
-}
+// footer > p > a:hover {
+//     color: $primary-darker;
+//     background: $light-gray;
+//     opacity: 0.8;
+//     text-decoration: none;
+// }
 
-footer > p > a:hover {
-    color: $primary-darker;
-}
 /*===========================================*/
 // animation styles for ipsum enter  
 /*===========================================*/
