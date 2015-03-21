@@ -40,7 +40,7 @@ angular
         }
 
         function buildParagraph(numParagraphs){
-            self.resetButtonState();
+            resetButtonState();
             numParagraphs > 100 ? numParagraphs = 100 : numParagraphs;
             var numSentences = numParagraphs * 10;
             var paragraph = buildSentence(self.phrases);
